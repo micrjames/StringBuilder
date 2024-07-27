@@ -1,26 +1,26 @@
-import { StringBuilder } "../StringBuilder";
+import { StringBuilder } from "../StringBuilder";
 
-describe("", () => {
+describe("A StringBuilder", () => {
+   let sb: StringBuilder;
+   let sbStr: string;
    beforeAll(() => {
+	  sb = new StringBuilder();
+	  sbStr = null;
    });
-   describe("", () => {
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
-   });
-   describe("", () => {
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
-	  test.todo("", () => {
-	  });
+   /*
+   isEmpty();
+
+   append(str);
+
+   build();
+
+   clear();
+   */
+   describe("Created", () => {
+	  test.todo("Should exist.");
+	  test.todo("Should append a string.");
+	  test.todo("Should append a chain of strings.");
+	  test.todo("Should build to create a completed string.");
+	  test.todo("Should clear the completed string.");
    });
 });
