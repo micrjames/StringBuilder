@@ -1,7 +1,7 @@
 export class StringBuilder {
    private strs: Array<string> = new Array<string>();
 
-   isEmpty(): boolean {
+   get isEmpty(): boolean {
 	  return this.strs.length === 0;
    }
 
@@ -11,7 +11,7 @@ export class StringBuilder {
    }
 
    build(): string {
-	  return this.strs.join(' ');
+	  return this.strs.join('');
    }
 
    clear() {
