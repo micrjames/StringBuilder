@@ -6,12 +6,15 @@ export class StringBuilder {
    }
 
    append(str: string): StringBuilder {
-	  this.strs.push(str);
-	  return this;
+	  if(typeof str === "string") {
+		 this.strs.push(str);
+		 return this;
+	  }
    }
 
    build(): string {
-	  return this.strs.join('');
+	  if(!this.isEmpty)
+		 return this.strs.join('');
    }
 
    clear() {
