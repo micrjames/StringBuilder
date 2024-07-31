@@ -32,5 +32,20 @@ describe("A StringBuilder", () => {
 		 sbStr = sb.build();
 		 expect(sbStr).toEqual("hello");
 	  });
+	  test("Should append each string piecemeal.", () => {
+		 sb.clear();
+		 sb.append("h");
+		 sb.append("e");
+		 sb.append("l");
+		 sb.append("l");
+		 sb.append("o");
+		 const sbSize = sb.size;
+		 expect(sbSize).toBe(5);
+	  });
+	  test("Should build the completed string from the piecemeal appended strings.", () => {
+		 sbStr = sb.build();
+		 expect(sbStr).toEqual("hello");
+	  });
+
    });
 });

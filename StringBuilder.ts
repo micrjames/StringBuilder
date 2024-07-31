@@ -5,6 +5,10 @@ export class StringBuilder {
 	  return this.strs.length === 0;
    }
 
+   get size(): number {
+	  return this.strs.length;
+   }
+
    append(str: string): StringBuilder {
 	  if(typeof str === "string") {
 		 this.strs.push(str);
