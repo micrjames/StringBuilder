@@ -53,7 +53,7 @@ And, build the string again, which gives and empty string, *""*..
 ```
 
 ## Project Status
-As this code is intended to be a part of a project in itself, this project is still in progress and will be until that project is completed. 
+This project is essentially completed. 
 
 ## Room for Improvement
 The areas where there may be some room for improvement are those where some properties may be better suited to be public and thereby a couple functions should be removed.
