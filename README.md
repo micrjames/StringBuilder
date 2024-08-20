@@ -29,7 +29,7 @@ Just import the StringBuilder class into your project.
 ## Usage
 Instantiate a StringBuilder object:
 ```
-    StringBuild sb = new StringBuilder();
+    const sb: StringBuilder = new StringBuilder();
 ```
 Check whether *sb* is empty.
 ```
