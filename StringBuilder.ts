@@ -16,6 +16,16 @@ export class StringBuilder {
 	  }
    }
 
+   appendSp(): StringBuilder {
+	  const sp = ' ';
+	  return this.append(sp);
+   }
+
+   appendComma(): StringBuilder {
+	  const comma = ',';
+	  return this.append(comma);
+   }
+
    build(): string {
 	  if(!this.isEmpty)
 		 return this.strs.join('');

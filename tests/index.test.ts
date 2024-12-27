@@ -23,6 +23,8 @@ describe("A StringBuilder", () => {
 		 isEmpty = sb.isEmpty;
 		 expect(isEmpty).toBeTruthy();
 	  });
+   });
+   describe("Appending", () => {
 	  test("Should append a chain of strings.", () => {
 		 sb.append("h").append("e").append("l").append("l").append("o");
 		 isEmpty = sb.isEmpty;
@@ -46,6 +48,26 @@ describe("A StringBuilder", () => {
 		 sbStr = sb.build();
 		 expect(sbStr).toEqual("hello");
 	  });
-
+   });
+   describe("Appending Special Characters", () => {
+	  let sp: String;
+	  let comma: String;
+	  beforeAll(() => {
+		 sp = ' ';
+		 comma = ',';
+	  });
+	  beforeEach(() => {
+		 sb.clear();
+	  });
+	  test("Should append a 'space' character'", () => {
+		 sb.appendSp();
+		 sbStr = sb.build();
+		 expect(sbStr).toEqual(sp);
+	  });
+	  test("Should append a 'comma' character", () => {
+		 sb.appendComma();
+		 sbStr = sb.build();
+		 expect(sbStr).toEqual(comma);
+	  });
    });
 });
